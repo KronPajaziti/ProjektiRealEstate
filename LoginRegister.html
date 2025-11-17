@@ -1,2 +1,40 @@
 <!-- Page Log in/ Register eshte per Kronin , veq e kom kriju sa per me mujte me lidhe me page Homee
- Fshije qet koment kur te nis projektin -->
+ Fshije qet koment kur te nis projektin --><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StoneBridge | Login & Register</title>
+  <link rel="stylesheet" href="LoginRegister.css">
+</head>
+<body>
+  <!-- Login forma -->
+  <div class="container" id="login-container">
+    <div class="logo">
+      <img src="logo.png" alt="MiCasa Logo" />
+    </div>
+    <h2>Welcome Back</h2>
+    <input type="text" id="login-username" placeholder="Username" required />
+    <input type="password" id="login-password" placeholder="Password" required />
+    <button onclick="login()">Log In</button>
+    <p>Don’t have an account? <a onclick="showRegister()">Register</a></p>
+    <div class="message" id="login-message"></div>
+  </div>
+
+  <!-- Regjistrimi -->
+  <div class="container" id="register-container" style="display: none;">
+    <div class="logo">
+      <img src="logo.png" alt="MiCasa Logo" />
+    </div>
+    <h2>Create Account</h2>
+    <input type="text" id="register-username" placeholder="Username" required />
+    <input type="password" id="register-password" placeholder="Password" required />
+    <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+    <button onclick="register()">Register</button>
+    <p>Already have an account? <a onclick="showLogin()">Log In</a></p>
+    <div class="message" id="register-message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
